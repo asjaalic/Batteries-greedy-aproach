@@ -86,12 +86,12 @@ if runMode.dynamicProgramming
     ResultsDP = DP(InputParameters, Battery, state_variables, runMode, Power_prices, PV_production)   #configurations
     save(joinpath(FinalResPath, "dp_Results.jld"), "dp_Results", ResultsDP) 
     else
-      println("Solved without dynamic programming.")
+    println("Solved without dynamic programming.")
 end
 
 # SAVE OTIMAL-PATH DATA IN EXCEL FILES
 if runMode.excel_savings
-  cartella = "C:\\Users\\Utente\\Desktop\\Greedy approach degradation\\Results"
+  cartella = "C:\\GitSource-Batteries\\Batteries-greedy-aproach\\Results"
   cd(cartella)
   data_saving(InputParameters,ResultsDP,Power_prices)
   println("Results saved")
@@ -101,7 +101,7 @@ end
 
 # SAVE PLOTS IN THE CORRESPONDING FOLDER
 if runMode.plot_savings
-  cartella = "C:\\Users\\Utente\\Desktop\\Greedy approach degradation\\PLOTS"
+  cartella = "C:\\GitSource-Batteries\\Batteries-greedy-aproach\\Plots"
   cd(cartella)
   plotPath(InputParameters,ResultsDP,state_variables,priceYear)
 end
