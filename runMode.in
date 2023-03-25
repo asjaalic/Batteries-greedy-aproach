@@ -1,0 +1,24 @@
+# Set input
+    # from .in file, else from jld file
+    setInputParameters = true
+
+    # from input files, else from jld inputhpath
+    batterySystemFromFile = true
+    
+    productionPV = false
+    battery_replacement = false
+    maximumGrid = false
+    onlyExport = false
+
+    excel_savings = true
+    plot_savings = true
+
+
+# SIM settings
+    dynamicProgramming = true
+    simulate = false
+    parallellSim = false
+
+    
+
+  

@@ -1,0 +1,9 @@
+
+#problem definition
+    NHoursStage = 0.5
+    NStages = 17520
+    NStates = 21
+
+#General
+    Big = 1E16
+
