@@ -9,7 +9,7 @@ function DP(                                                                    
   )
 
   @unpack (NStages, NStates, NHoursStage, Big) = InputParameters
-  @unpack (grid_Capacity, power_Capacity, energy_Capacity, Eff_charge, Eff_discharge,costBattery, DoD, NCycles) = Battery      # MAXCharge, MAXDischarge,
+  @unpack (grid_Capacity, power_Capacity, energy_Capacity, Eff_charge, Eff_discharge, costBattery, DoD, NCycles) = Battery      # MAXCharge, MAXDischarge,
   @unpack (maximumGrid, onlyExport, productionPV, battery_replacement) = runMode
   @unpack (seg) = state_variables
 
