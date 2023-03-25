@@ -1,2 +1,2 @@
-# Batteries
-Dynamic programming and optimization problem considering battery degradation
+# Batteries: greedy approach
+Dynamic programming considering battery degradation - constant SOH revamping
